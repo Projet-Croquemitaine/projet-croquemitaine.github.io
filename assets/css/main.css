@@ -31,7 +31,13 @@
 	--font-white: #ffffff;
 	
 	
-	--password-wiki : "la colline"
+	--password-wiki : "la colline";
+	--href-1 : "le-voyage-1.html";
+	--href-10 : "le-voyage-0.html";
+	--href-2 : "le-voyage-11.html";
+	--href-20 : "le-voyage-00.html";
+	--href-3 : "le-voyage-111.html";
+	--href-30 : "le-voyage-000.html";
 }
 
 html, body, div, span, applet, object,
