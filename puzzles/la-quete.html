@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en" style = "min-height : 100%; background-color: var(--font-black)">
+<head>
+  <title>Projet Croquemitaine</title> <!-- title of web tab -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="../assets/css/my-styles.css" />
+</head>
+
+
+<body style ="margin : 0">
+<!-- Page Top and Bottom -->
+<div  class = "my-header"></div>
+<div class = "my-footer"></div>
+
+<div class="my-wrapper full-height" id="wrapper" style="box-sizing: border-box; 
+                                                width: 100%; 
+                                                height: 100%; 
+                                                background-color: var(--site-background-color)">
+  <div id="page-top" class="my-spacer" style="height: 100px"></div> <!-- head fixed spacer -->
+
+
+  <!-- Main -->
+  <div id="main" style="overflow: hidden; height : 100%">
+    <div class="inner">
+      
+      <div class="my-section" id="instructions" style="text-align:center; width:75%; margin:auto">
+        <h2>I - la quête</h2>
+        <p>
+          Le <a href="https://fr.wikipedia.org/wiki/Croque-mitaine" style="color:var(--font-green); font-style:italic">Croquemitaine</a> est une créature discrète et dangereuse.
+        </p>
+        <br>
+        <p>
+          Son repaire est caché aux yeux de tous, mais en enquêtant sur ce que vous pouvez trouver sur lui, vous trouverez le nom
+          du lieu où il se cache.
+        </p>
+        <br>
+        <br>
+        <p>Renseignez vous sur lui, trouvez un assassin professionnel qui porte son nom. </p>
+        <p>Puis, depuis cet assassin, une ville d'Afrique où il s'est rendu dans sa troisième apparition. </p>
+        <p>Enfin, trouvez  l'ancien nom de cette ville. Votre source donne une traduction de ce nom. Voilà votre mot de passe</p>
+      </div>
+
+      <div id="input-field" style="display:flex">
+        <input type="text" placeholder="Mot de passe" autocomplete="off" id="txtInput" style="width:50%; margin:auto; text-align: center;
+                                                                  background-color: var(--site-headers-color);
+                                                                  font-size:25px">
+      </div>
+      <p style="font-size:12pt; color:var(--font-dark-gray); text-align: center">Indice : vous trouverez le mot de passe exact entre guillemets</p>
+
+      <div class ="my-section" id="next-button" style ="display : flex">
+        <a class ="buttEnable" href="le-voyage.html" disabled="true" style="margin: auto; display:none">
+
+          <input type="button" value="valider" style="width: auto; height: 100px;
+                                                                          font-size: 20pt; margin: auto;"/>
+        </a>
+        <a class ="butt-stand-in"  style="margin: auto; display:inline">
+
+          <input type="button" value="valider" style="width: auto; height: 100px;
+                                                                          font-size: 20pt; margin: auto;"/>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+  $('#txtInput').keyup(
+          function()
+          {
+            let button = $('.buttEnable')
+            let false_button = $('.butt-stand-in')
+            let value = $(this).val().toLowerCase().replaceAll("\\s","")
+            if( value === 'colline' || value === "lacolline")
+            {
+              button.show();
+              false_button.hide();
+            }
+            else
+            {
+              button.hide();
+              false_button.show();
+            }
+          }
+  );
+
+  $('#txtInput').load(
+          function()
+          {
+            $('.buttEnable').hide();
+            $('.butt-stand-in').show();
+          }
+  )
+</script>
+</body>
+
+
+</html>

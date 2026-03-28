@@ -27,21 +27,17 @@
     <div class="inner">
       
       <div class="my-section" id="instructions" style="text-align:center; width:75%; margin:auto">
-        <h2>I - Son repaire</h2>
-        <p>
-          Le <a href="https://fr.wikipedia.org/wiki/Croque-mitaine" style="color:var(--font-green); font-style:italic">Croquemitaine</a> est une créature discrète et dangereuse.
-        </p>
-        <br>
-        <p>
-          Son repaire est caché aux yeux de tous, mais en enquêtant sur ce que vous pouvez trouver sur lui, vous trouverez le nom
-          du lieu où il se cache.
-        </p>
-        <br>
-        <br>
-        <p>Renseignez vous sur lui, trouvez un assassin professionnel qui porte son nom. </p>
-        <p>Puis, depuis cet assassin, une ville d'Afrique où il s'est rendu dans sa troisième apparition. </p>
-        <p>Enfin, trouvez  l'ancien nom de cette ville. Votre source donne une traduction de ce nom. Voilà votre mot de passe</p>
+        <h2>III - La porte</h2>
+        <p>Vous voilà à la porte. Un étrange code orne la serrure, saurez vous trouver la dernière combinaison?</p>
       </div>
+      
+      <div class ="my-section" style ="display : flex; flex-flow: column; margin-top:0 ">
+        <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px; image-rendering: pixelated;">
+          <img src="../images/codePorte.png" alt="" style="width: 25%; max-width: none;
+                                        filter: invert(74%) sepia(92%) saturate(351%) hue-rotate(59deg) brightness(96%) contrast(90%);" />
+        </span>
+      </div>
+
 
       <div id="input-field" style="display:flex">
         <input type="text" placeholder="Mot de passe" autocomplete="off" id="txtInput" style="width:50%; margin:auto; text-align: center;
@@ -51,7 +47,7 @@
       <p style="font-size:12pt; color:var(--font-dark-gray); text-align: center">Indice : vous trouverez le mot de passe exact entre guillemets</p>
 
       <div class ="my-section" id="next-button" style ="display : flex">
-        <a class ="buttEnable" href="le-voyage.html" disabled="true" style="margin: auto; display:none">
+        <a class ="buttEnable" href="../quizz/l-entree.html" disabled="true" style="margin: auto; display:none">
 
           <input type="button" value="valider" style="width: auto; height: 100px;
                                                                           font-size: 20pt; margin: auto;"/>
@@ -64,6 +60,7 @@
       </div>
       
     </div>
+    
   </div>
 </div>
 
@@ -73,6 +70,34 @@
 <script src="../assets/js/breakpoints.min.js"></script>
 <script src="../assets/js/util.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+  $('#txtInput').keyup(
+          function()
+          {
+            let button = $('.buttEnable')
+            let false_button = $('.butt-stand-in')
+            let value = $(this).val().toLowerCase().replaceAll("\\s","")
+            if( value === "abcefghjltv")
+            {
+              button.show();
+              false_button.hide();
+            }
+            else
+            {
+              button.hide();
+              false_button.show();
+            }
+          }
+  );
+
+  $('#txtInput').load(
+          function()
+          {
+            $('.buttEnable').hide();
+            $('.butt-stand-in').show();
+          }
+  )
+</script>
 </body>
 
 

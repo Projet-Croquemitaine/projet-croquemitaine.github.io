@@ -187,31 +187,3 @@
 			});
 
 })(jQuery);
-
-$('#txtInput').keyup(
-	function()
-	{
-		let button = $('.buttEnable')
-		let false_button = $('.butt-stand-in')
-		let value = $(this).val().toLowerCase().replaceAll("\\s","")
-		if( value === 'colline' || value === "lacolline")
-		{
-			button.show();
-			false_button.hide();
-		}
-		else
-		{
-			button.hide();
-			false_button.show();
-		}
-	}
-);
-
-$('#txtInput').load(
-	function()
-	{
-		$('.buttEnable').hide();
-		$('.butt-stand-in').show();
-	}
-)
-
