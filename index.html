@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "min-height : 100%">
 <head>
-        <title>Côme Serlooten - Portfolio</title> <!-- title of web tab -->
+        <title>Projet Croquemitaine</title> <!-- title of web tab -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -9,392 +9,51 @@
         <link rel="stylesheet" href="assets/css/my-styles.css" />
 </head>
 
-<!-- Page Top and Bottom -->
-<div  class = "my-header">
-    <div style="text-align: left; height:100%;  display: flex; margin-left: 25px" >
-        <a href="index.html" style="color: rgb(125,125,125); margin-top: auto; margin-bottom: auto;">Home</a>
-    </div>
-</div>
-<div class = "my-footer">
-    <div style="display: grid; margin-top: auto; margin-bottom: auto; padding: 0 1em; grid-template-rows: auto">
-        <ul class="icons" style="margin:0">
-            <li style="margin: 0 5px 0 5px ;padding: 0"><a href="https://www.facebook.com/profile.php?id=100006138917291" class="icon brands style2 fa-facebook-f fa-xs"><span class="label">Facebook</span></a></li>
-            <li style="margin: 0 5px ;padding: 0"><a href="https://www.instagram.com/comeserlooten/" class="icon brands style2 fa-instagram fa-xs"><span class="label">Instagram</span></a></li>
-            <li style="margin: 0 5px ;padding: 0"><a href="https://phyrocast.itch.io/" class="icon brands style2 fa-itch-io fa-xs"><span class="label">Itch.io</span></a></li>
-            <li style="margin: 0 5px ;padding: 0"><a href="https://github.com/ComeSerlooten/" class="icon brands style2 fa-github fa-xs"><span class="label">GitHub</span></a></li>
-            <li style="margin: 0 5px ;padding: 0"><a class="icon solid style2 fa-phone fa-xs">
-                <button onclick="CopyToClipboardPhone()" class="label">Phone</button>
-                <div class="my-tooltip">
-                    <div class="my-tooltip-text" style="margin-top:-5px; height: 25px">
-                        <p style="margin-top:-2px; height:25px">copy:+33695707553</p>
-                    </div>
-                </div>
-            </a></li>
-            <li style="margin: 0 5px 0 5px ;padding: 0"><a class="icon solid style2 fa-envelope fa-xs">
-                <button onclick="CopyToClipboardEmail()" class="label">Email</button>
-                <div class="my-tooltip">
-                    <div class="my-tooltip-text" style="margin-top:-5px; height: 25px">
-                        <p style="margin-top:-2px; height:25px">copy:c.serloot@gmail.com</p>
-                    </div>
-                </div>
-            </a></li>
-        </ul>
-    </div>
 
-    <div style="text-align: right; width:30%; padding : 0 2em" >
-        <a href="#page-top" style="color: rgb(125,125,125)">Scroll to top</a>
-    </div>
-</div>
 
-<body>
-    <div class="my-wrapper" id="wrapper" style="box-sizing: border-box; 
+<body style ="margin : 0">
+    <!-- Page Top and Bottom -->
+    <div  class = "my-header"></div>
+    <div class = "my-footer"></div>
+
+    <div class="my-wrapper full-height" id="wrapper" style="box-sizing: border-box; 
                                                 width: 100%; 
-                                                height: auto; 
+                                                height: 100%; 
                                                 background-color: var(--site-background-color)">
-        <div id="page-top" class="my-spacer" style="height: 50px"></div> <!-- head fixed spacer -->
-
+        <div id="page-top" class="my-spacer" style="height: 100px"></div> <!-- head fixed spacer -->
         
-        
-        <!-- Header Logo -->
-        <header id="header">
-            <div class="inner">
-
-                <!-- Logo -->
-                <a href="index.html" class="logo">                <!--style="-webkit-filter: invert()"-->
-                    <span class="symbol">
-                        <img src="images/logo.svg" alt="">
-                    </span>
-                    <span class="my-title">Côme Serlooten</span>
-                </a>
-
-                <!-- Nav -->
-                <nav>
-                    <ul>
-                        <li><a href="#menu">Menu</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </header>
-
-        <!-- Menu -->
-        <nav id="menu">
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/Spotlight_Projects.html">Spotlight Projects</a></li>
-                <li><a href="pages/Games.html">Games</a></li>
-                <li><a href="pages/Fragments.html">Fragments</a></li>
-                <li><a href="pages/Arts.html">Arts</a></li>
-                <li><a href="pages/Concepts.html">Concepts</a></li>
-                <!--<li><a href="../pages/Other.html">Others</a></li>-->
-                <li><a href="pages/CV_Resume.html">CV/Resume</a></li>
-                <li><a href="pages/Credits.html">Credits</a></li>
-                <!--<li><a href="elements.html">Elements</a></li>--> <!-- To Hide -->
-            </ul>
-        </nav>
-
-        <!-- Header Intro -->
-        <header>
-            <div class="my-section" id="intro" style="overflow: hidden">
-                <div class="my-panel" style="padding: 25px; 
-                                        margin-bottom: 0; /* override */
-                                        margin-top: 0; /* override */
-                                        display: grid;
-                                        grid-template-columns: fit-content(29%) fit-content(69%); /*29% 69% */
-                                        column-gap: 2%;">
-                    <div class="my-wrapper" style="display: flex; align-items: center">
-                        <div class="my-panel" style="aspect-ratio: 1;
-                                                    margin-bottom: auto; 
-                                                    margin-top: auto; 
-                                                    align-content: center;">
-                            <div class="image" style="display: block; margin-top: auto; margin-bottom: auto">
-                                <img src="images/ProfilePic.jpeg" alt="Profile picture" style="border-radius: 25%; 
-                                                                                                max-width: 70%; 
-                                                                                                margin-left: 15%; 
-                                                                                                margin-right: 15%"/>
-                            </div>
-                            <!-- <h2 style="text-align:center; width:100%; margin: auto">By Côme Serlooten</h2> -->
-                        </div>
-                    </div>
-                    <div class="my-wrapper" style="overflow: hidden; height:auto; margin-top:auto; margin-bottom:auto">
-                        <h1>Hello! I'm Côme Serlooten</h1> <!--edit text, give credits in other page-->
-                        <p>I'm a Junior Game Programmer engineer, with a passion for creating fun and engaging
-                            experiences and games, welcome to my portfolio. Feel free to explore!</p>
-                    </div>
-
-                </div>
-            </div>
-        </header>
         
         <!-- Main -->
-        <div id="main" style="overflow: hidden;">
+        <div id="main" style="overflow: hidden; height : 100%">
             <div class="inner">
                 
                 
-
-                <div class="my-section" id="split line 1">
-                    <div class="my-panel"  style="height: 15px"></div>
-                </div>
-
-                <div class="my-section" id="about section">
-                    <div class="my-panel" style="padding: 15px; text-align: justify">
-                        <h1 style="margin-left: 25px; margin-bottom: 10px">About me :</h1> <!--edit text, give credits in other page-->
-
-                        <div class="wrapper" style="padding:5px">
-                            <p style="text-indent: 1.5em"><b>  I'm an artist, designer, storyteller and game programer with experience in Unity and Unreal, on PC, Mobile and VR,
-                                always on the lookout for new ways to express my creativity and bring ideas to life.</b></p>
-                            <br>
-                            <p style="text-indent: .5em">Programer and Tech-oriented by my studies, I do my best to integrate my artistic skills into all my project to give them
-                                that extra spark of life. My projects are mostly based on <i>Unity</i> and <i>Unreal Engine</i>, often enriched with my own
-                                self-made sprites and 2D animations, and explore PC, mobile, and VR platforms.</p>
-                            <p style="text-indent: .5em">With the chance to have lived in and visited many countries, and studied in France, England, and Canada during my master's
-                                degrees, I hope to draw from all the places I've seen and people I've met, as well as from all the worlds I've discovered
-                                to craft unique, compelling, and engaging experiences for players to explore with me.</p>
+                <div id = "title_host"></div>
+                    <div class="my-section">
+                        
+                        <div class="my-panel"  style="height: 5px; background-color: var(--font-green)"></div>
+                        
+                        <div class="my-panel"  style="height: 200px; background-color: var(--transparent-black-color);
+                                                        display: flex">
+                            <p style ="margin: auto; font-size: 75pt"><b>PROJET CROQUEMITAINE</b></p>
                         </div>
+                        
+                        <div class="my-panel"  style="height: 5px; background-color: var(--font-green)"></div>
+                        
                     </div>
+                
+                <br>
+                <br>
+                <br>
+                <div class ="my-section" style ="display : flex">
+                    <a href="puzzles/Intro.html" style="margin: auto;">
+                        <input type="button" value="Entrer" 
+                               style = "width: auto; height: 150px; font-size: 25pt;"/>
+                    </a>
                 </div>
-
-                <div class="my-section" id="access menu">
-                    <div class="my-panel" style="height: 200px; background-color: rgba(0,0,0,0.5)">
-                        <div style="text-align: center">
-                            <br>
-                            <h1 style="margin-bottom:20px">[Website under construction]</h1>
-                            <p>For all my projects without their dedicated articles yet, go to <a href="https://phyrocast.itch.io/" style="color:var(--hover-color-light)">my itch page</a>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="my-section" id="grid content">
-                    <div class="my-panel" style="height: min-content; padding: 25px">
-                        <section class="my-tiles">
-                            
-                            <article class="black" id="disobey_protocol_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/DisobeyProtocol_Game/Robots_Display.png" alt="" style="margin-left:-25%"/>
-                                    <img class="showcase" src="images/DisobeyProtocol_Game/Disobey_Walking_Loop.gif" alt="" style="height: 100%" />
-                                </span>
-                                
-                                <a href="articles/DisobeyProtocol_Game.html">
-                                    <h2>Disobey Protocol</h2>
-                                    <div class="content">
-                                        <p>A Unity 2D Puzzle Platformer - CodingBlocks '23 Game Jam</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Platformer</tag> <tag>Puzzle</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            
-                            <article class="black" id="decay_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/Decay_Game/DevScreen.png" alt="" style="margin-left:-50%"/>
-                                    <img class="showcase" src="images/Decay_Game/Decay_glitchingBoxes_Loop.gif" alt="" style="height: 100%" />
-                                </span>
-
-                                <a href="articles/Decay_Game.html">
-                                    <h2>Decay</h2>
-                                    <div class="content">
-                                        <p>A rewarded Unity 2D Puzzle Platformer - Wonderjam UQAC Fall 2022</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Platformer</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            
-                            <article class="black" id="hyperaustal_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/Hyperaustral_Game/Cinematic_Flying_static.png" alt="" style="margin-left:-25%"/>
-                                    <img class="showcase" src="images/Hyperaustral_Game/Passagers_loop.gif" alt="" style="height: 100%" />
-                                </span>
-
-                                <a href="articles/Hyperaustral_Game.html">
-                                    <h2>Hyperaustral</h2>
-                                    <div class="content">
-                                        <p>An apocalypse airship management game - Student project</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Management</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            
-                            <article class="black" id="flickering_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/FlickeringShadows_Game/entrance.png" alt="" style="margin-left:-25%"/>
-                                    <img class="showcase" src="images/FlickeringShadows_Game/RunLoadingShrunk.gif" alt="" style="width: 100%; background-color: black;" />
-                                </span>
-
-                                <a href="articles/FlickeringShadows_Game.html">
-                                    <h2>Flickering Shadows</h2>
-                                    <div class="content">
-                                        <p>An Unreal Engine maze-rush minigame - Student project</p>
-                                        <tag>Unreal Engine</tag> <tag>3D</tag> <tag>Maze</tag>
-                                    </div>
-                                </a>
-                            </article>
-                            
-                            
-                            <article class="black" id="dantes_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/DantesRebellion_Game/AngelLogoIdea.PNG" alt="" style="width: 100%;"/>
-                                    <img class="showcase" src="images/DantesRebellion_Game/Boss_loop.gif" alt="" style="height: 100%; background-color: black; margin-left:-5%" />
-                                </span>
-
-                                <a href="articles/DantesRebellion_Game.html">
-                                    <h2>Dante's Rebellion</h2>
-                                    <div class="content">
-                                        <p>A Score-Rush fighting platformer - ScoreSpace Jam #29</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Platformer</tag> <tag>Speedrun</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            <article class="black" id="scuba_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/ScubaLooter_Game/GameIcon.png" alt="" style="width: 100%; image-rendering: pixelated"/>
-                                    <img class="showcase" src="images/ScubaLooter_Game/Scuba_Menu_Loop.gif" alt="" style="height: 110%; background-color: black; margin-left:-35%; margin-top: -10%;" />
-                                </span>
-
-                                <a href="articles/ScubaLooter_Game.html">
-                                    <h2>Scuba Looter</h2>
-                                    <div class="content">
-                                        <p>A roguelite Diver exploration game - Pixel Game Jam 2024</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Procedural</tag> <tag>Roguelite</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-
-                            <article class="black" id="orbital_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/OrbitalEx_Game/Impact.PNG" alt="" style="height: 100%; image-rendering: pixelated"/>
-                                    <img class="showcase" src="images/OrbitalEx_Game/Gravity_Pull.gif" alt="" style="height: 100%; background-color: black; margin-left:-25%" />
-                                </span>
-
-                                <a href="articles/OrbitalEx_Game.html">
-                                    <h2>Orbital Ex</h2>
-                                    <div class="content">
-                                        <p>A Space-bound delivery Game - 2D Game Jam 2024</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Momentum</tag> <tag>UI Design</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            <article class="black" id="mayhem_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/MiniMayhem_Game/Cover.png" alt="" style="height: 100%; image-rendering: pixelated; margin-left: -25%"/>
-                                    <img class="showcase" src="images/MiniMayhem_Game/Battle_Extract_loop.gif" alt="" style="height: 100%;background-color: black; " />
-                                </span>
-
-                                <a href="articles/MiniMayhem_Game.html">
-                                    <h2>MiniMayhem</h2>
-                                    <div class="content">
-                                        <p>A tactical strategy game - Ludum Dare #56</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Ludum Dare</tag> <tag>Strategy</tag> <tag>Deckbuilding</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            <article class="black" id="capitalism_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/LateStageCapitalism_Game/Logo.png" alt="" style="height: 100%; image-rendering: pixelated"/>
-                                    <img class="showcase" src="images/LateStageCapitalism_Game/InsideScreenlightCycle.gif" alt="" style="height: 100%;background-color: black; " />
-                                </span>
-
-                                <a href="articles/LateStageCapitalism_Game.html">
-                                    <h2>LAte Stage Capitalism</h2>
-                                    <div class="content">
-                                        <p>An exploration-based incremental clicker - Yogscast Jingle Jam 2024</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Clicker</tag> <tag>Incremental</tag>
-                                    </div>
-                                </a>
-                            </article>
-
-                            <article class="black" id="growing_game">
-                                <span class="image" style="overflow: hidden">
-                                    <img class="preview" src="images/GrowingOut_Game/icon.png" alt="" style="height: 100%; image-rendering: pixelated"/>
-                                    <img class="showcase" src="images/GrowingOut_Game/GrowingDemoAnim.gif" alt="" style="height: 125%;background-color: black; margin-top: -10% " />
-                                </span>
-
-                                <a href="articles/GrowingOut_Game.html">
-                                    <h2>Growing Out</h2>
-                                    <div class="content">
-                                        <p>A 2D ressource collection game - Spring Jam '25</p>
-                                        <tag>Unity</tag> <tag>2D</tag> <tag>Platformer</tag> <tag>Ressource Management</tag>
-                                    </div>
-                                </a>
-                            </article>
-                            
-                            <article class="style3">
-                                <span class="image">
-                                    <img class="preview" src="images/pic08.jpg" alt="" />
-                                    <img class="showcase" src="images/pic01.jpg" alt="" />
-                                </span>
-                                <a href="articles/Missing_Article.html">
-                                    <h2>Dolor</h2>
-                                    <div class="content">
-                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                                    </div>
-                                </a>
-                            </article>
-                            <article class="style1">
-                                <span class="image">
-                                    <img class="preview" src="images/pic09.jpg" alt="" />
-                                    <img class="showcase" src="images/pic01.jpg" alt="" />
-                                </span>
-                                <a href="articles/Missing_Article.html">
-                                    <h2>Nullam</h2>
-                                    <div class="content">
-                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                                    </div>
-                                </a>
-                            </article>
-                            <article class="style5">
-                                <span class="image">
-                                    <img class="preview" src="images/pic10.jpg" alt="" />
-                                    <img class="showcase" src="images/pic01.jpg" alt="" />
-                                </span>
-                                <a href="articles/Missing_Article.html">
-                                    <h2>Ultricies</h2>
-                                    <div class="content">
-                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                                    </div>
-                                </a>
-                            </article>
-                            <article class="style6">
-                                <span class="image">
-                                    <img class="preview" src="images/pic11.jpg" alt="" />
-                                    <img class="showcase" src="images/pic01.jpg" alt="" />
-                                </span>
-                                <a href="articles/Missing_Article.html">
-                                    <h2>Dictum</h2>
-                                    <div class="content">
-                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                                    </div>
-                                </a>
-                            </article>
-                            <article class="style4">
-                                <span class="image">
-                                    <img class="preview" src="images/pic12.jpg" alt="" />
-                                    <img class="showcase" src="images/pic01.jpg" alt="" />
-                                </span>
-                                <a href="articles/Missing_Article.html">
-                                    <h2>Pretium</h2>
-                                    <div class="content">
-                                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </section>
-                    </div>
-                </div>
-
-
-                <div class="my-spacer" style="height: 50px"></div> <!-- foot fixed spacer -->
-
-
-            </div>
             </div>
         </div>
+    </div>
     
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -406,70 +65,3 @@
 
     
 </html>
-
-
-<!--
-<div class="my-wrapper" style="padding: 25px; width:100%">
-    <div class="my-panel" style="background-color: rgba(255, 255, 255, .5); 
-                            padding: 25px; 
-                            margin-bottom: 25px;
-                            border-radius: 25px">
-        <div class="my-wrapper" style="width:33%;
-                                        padding: 25px">
-            <div class="image">
-                <img src="images/ProfilePic.jpeg" alt="Profile picture" style="border-radius: 25%; 
-                                                                                max-width: 50%; 
-                                                                                margin-left: 25%; 
-                                                                                margin-right: 25%"/>
-            </div>
-            <h2 style="text-align:center; width:100%; margin: auto">By Côme Serlooten</h2>
-        </div>
-        <div class="my-wrapper" style="width:66%">
-            <h1>This is Phantom, a free, fully responsive site<br />
-                template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-            <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-        </div>
-
-    </div>
-</div>
--->
-
-
-<!-- 
- 
-<div class="my-section" id="grid content 2">
-    <div class="my-panel" style="height: min-content; padding: 25px">
-        <div class="my-grid" style="width: 100%">
-            <div class="my-grid-item">
-                <article class="style5">
-                        <span class="image">
-                            <img src="images/pic05.jpg" alt="" />
-                        </span>
-                    <a href="articles/Missing_Article.html">
-                        <h2>Aliquam</h2>
-                        <div class="content">
-                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            <div class="my-grid-item">2</div>
-            <div class="my-grid-item">3</div>
-            <div class="my-grid-item">4</div>
-            <div class="my-grid-item">5</div>
-            <div class="my-grid-item">6</div>
-            <div class="my-grid-item">7</div>
-            <div class="my-grid-item">8</div>
-            <div class="my-grid-item">9</div>
-            <div class="my-grid-item">10</div>
-            <div class="my-grid-item">11</div>
-            <div class="my-grid-item">
-                12
-                <br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0
-            </div>
-        </div>
-    </div>
-</div>
- 
- -->
-
