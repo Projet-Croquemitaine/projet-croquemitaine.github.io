@@ -1,0 +1,160 @@
+﻿@import url(main.css);
+
+html, body {
+    height: 100%;
+    background-color: var(--font-black);
+}
+
+body, input, select, textarea {
+    color: var(--font-green);
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: normal;
+    line-height: 1.75;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.my-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1px;
+    row-gap: 1px;
+    grid-auto-rows: 200px;
+    background-color: rgba(100, 100, 100, .75);
+    padding: 25px;
+    border-radius: 25px;
+    column-rule: dashed;
+}
+
+.my-grid > .my-grid-item {
+    background-color: white;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.my-header {
+    height: 50px;
+    background-color: var(--site-headers-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+.my-footer {
+    height: 50px;
+    background-color: var(--site-headers-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+.basic-element {
+
+}
+
+.my-marker {
+    
+}
+
+.my-wrapper {
+
+}
+
+.my-section {
+    padding: 25px;
+    width: 100%
+}
+
+.my-spacer {
+}
+
+.my-title {
+    color: var(--font-green)
+}
+
+a > .my-title:hover {
+    border-bottom-color: transparent;
+    color: var(--hover-color) !important; /* hyperlink color on hover */
+}
+
+a > .my-title {
+    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+a >.my-button {
+    
+}
+
+.my-button:hover{
+    
+}
+
+tag
+{
+    background-color: var(--hover-color-dark);
+    border-radius: 10px;
+    display : inline-block;
+    padding:5px;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+.my-panel {
+    background-color: var(--panel-background-color);
+    '''border-radius: 25px;'''
+    /*margin-top: 25px;
+    margin-bottom:25px;*/
+}
+
+.my-article-image-area {
+    width: 100%;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.my-article-image-area > .my-image {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.my-article-image-area p {
+    color: var(--hover-color-deep-dark);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.my-article-section {
+    margin: 0 0 1em 0;
+    border-radius: 10px;
+    background-color: var(--panel-background-color);
+    padding: 15px;
+}
+
+.my-article-section > img  {
+    max-width: 100%;
+}
+
+.my-image > img  {
+    max-width: 100%;
+}
+
+/*===*/
+/*greffes*/
+
+::placeholder {
+    color: var(--font-light-gray)
+}
