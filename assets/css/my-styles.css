@@ -21,6 +21,16 @@ body, input, select, textarea {
     height: 100%;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in-element {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
 .my-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;

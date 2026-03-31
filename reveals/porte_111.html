@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en" style = "min-height : 100%; background-color: var(--font-black)">
+<head>
+    <title>Projet Croquemitaine</title> <!-- title of web tab -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="../assets/css/my-styles.css" />
+</head>
+
+
+<body style ="margin : 0">
+<!-- Page Top and Bottom -->
+<div  class = "my-header"></div>
+<div class = "my-footer"></div>
+
+<div class="my-wrapper full-height" id="wrapper" style="box-sizing: border-box; 
+                                                width: 100%; 
+                                                height: 100%; 
+                                                background-color: var(--site-background-color)">
+    <div id="page-top" class="my-spacer" style="height: 100px"></div> <!-- head fixed spacer -->
+
+
+
+
+    <!-- Main -->
+    <div id="main" style="height : 100%">
+        <div class="inner">
+
+            <div class="my-section" style="display:flex; text-align: center; padding:0; margin-top:-50px">
+                <p style="margin:auto">Cliquez sur la silhouette pour libérer votre Avatar</p>
+            </div>
+
+            <div id="show-images-section" class="my-section" style ="display : flex; flex-flow: column; margin-top:0;">
+                <div class ="my-panel" style="background-color: var(--font-dark-gray); width: 50%; border-radius: 25px; margin: auto">
+                  <span id="black-image" class="my-image" onclick="show_reveal()" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px; image-rendering: pixelated;">
+                    <img src="../images/Avatar_Sincerite_Black.png" alt="" style="width: 50%; max-width: none;" />
+                  </span>
+                  <span id="reveal-image" class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px; image-rendering: pixelated;">
+                    <img src="../images/Avatar_Sincerite_Reveal.png" alt="" style="width: 50%; max-width: none;" />
+                  </span>
+                </div>
+            </div>
+            <p style="font-size: small; color:var(--font-dark-gray); margin-top: -29px; margin-bottom:-25px; text-align: center">
+                Ceci n'est pas une représentation qualitative de votre caractère et prends beaucoup de libertés créatives
+                <br>
+                Ne me tapez pas, s'il vous plaît
+            </p>
+
+
+            <div class="my-section" id="description" style="text-align:center; width:75%; margin:auto">
+                <h2><u>Avatar de la Sincérité</u></h2>
+                <p>Une bête à vos côtés où que vous alliez</p>
+                <p>On ne dompte pas un animal avec des mensonges</p>
+            </div>
+
+            <div class ="my-section" style ="display : flex">
+                <a href="../quizz/le-test.html" style="margin: auto;">
+
+                    <input type="button" value="Retour aux portes" style="width: auto; height: 100px;
+                                                                          font-size: 15pt; margin: auto;"/>
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+
+    $('#reveal-image').hide();
+    $('#description').hide();
+    $('#black-image').show();
+
+    function show_reveal() {
+        $('#black-image').hide();
+        $('#reveal-image').show();
+        $('#description').show();
+    }
+</script>
+</body>
+
+
+</html>
