@@ -23,7 +23,7 @@
 
 
   <!-- Main -->
-  <div id="main" style="overflow: hidden; height : 100%">
+  <div id="main" style="height : 100%">
     <div class="inner">
       
       <div class="my-section" id="instructions" style="text-align:center; width:75%; margin:auto">
@@ -48,7 +48,7 @@
                                                                   background-color: var(--site-headers-color);
                                                                   font-size:25px">
       </div>
-      <p style="font-size:12pt; color:var(--font-dark-gray); text-align: center">Indice : vous trouverez le mot de passe exact entre guillemets</p>
+      <p style="font-size:12pt; color:var(--font-dark-gray); text-align: center">Le mot de passe exact est entre guillemets</p>
 
       <div class ="my-section" id="next-button" style ="display : flex">
         <a class ="buttEnable" href="le-voyage.html" disabled="true" style="margin: auto; display:none">
@@ -62,7 +62,9 @@
                                                                           font-size: 20pt; margin: auto;"/>
         </a>
       </div>
-      
+      <br>
+      <br>
+      <br>
     </div>
   </div>
 </div>
@@ -79,7 +81,7 @@
           {
             let button = $('.buttEnable')
             let false_button = $('.butt-stand-in')
-            let value = $(this).val().toLowerCase().replaceAll("\\s","")
+            let value = $(this).val().toLowerCase().replaceAll(" ","")
             if( value === 'colline' || value === "lacolline")
             {
               button.show();
